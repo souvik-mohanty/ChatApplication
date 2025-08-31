@@ -1,7 +1,6 @@
 services:
   - type: web
     name: chat-app
-    env: docker # OR omit and let Render detect Java from commands
     plan: free
     branch: main
     buildCommand: "./mvnw clean package -DskipTests"
